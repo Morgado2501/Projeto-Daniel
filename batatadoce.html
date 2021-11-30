@@ -1,0 +1,94 @@
+<meta charset="UTF-8">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	body {
+	  background-color: #ffffff;
+	}
+	
+	h2 {
+	  border-bottom: 2px solid #000000;
+	}
+	
+	.container {
+	  color: #ffffff;
+	  background-color: #ffffff;
+	  padding: 15px;
+	}
+
+	
+	button {
+	  background-color: #ffffff;
+	  color: #1e90ff;
+	  border: 1px solid #000000;
+	  padding: 5px;
+	}
+	
+	</style>
+	</head>
+
+<title> Dalaz Burguer </title>
+<section id="topbar" class="topo">
+<link href="css/style.css" rel="stylesheet">
+
+<nav class="cabecalho">
+	<div class="cabeloja">
+		  <ul>
+			  
+				<div class="compras">
+					  <a href="carrinho.html">
+							<ol> 
+								<li><img class="carrinho" src="img/shopping-cart.png"></li>
+								  <li>Minhas compras</li>
+							</ol>
+					  </a>
+				</div>
+		  </ul>
+		</section>
+		
+<div class="Burger" >
+	
+	
+	<img src="img\gallery-8.jpg" alt="" class="img-fluid">
+	<br> Classico Burguer <strong>R$ 19,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Classico Burguer', document.getElementById('qtd2').value, '19.90', 2)"> Adicionar ao carrinho </button>
+</div>
+
+<div class="Burger">
+	
+	<img src="img\gallery-1.jpg" class="img-fluid">
+	<br> bacon Burguer <strong>R$ 22,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('bacon Burguer', document.getElementById('qtd2').value, '22.90', 2)"> Adicionar ao carrinho </button>
+</div>
+
+<div class="Burger">
+	<img src="img\gallery-4.jpg" class="img-fluid">
+	<br> Salada Burguer <strong>R$ 22,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Salada Burguer', document.getElementById('qtd3').value, '22.90', 3)"> Adicionar ao carrinho </button>
+</div>
+
+<div class="Burger">
+	<img src="img\gallery-7.jpg" class="img-fluid">
+	<br> Salada Bacon <strong>R$ 25,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd4">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Salada Bacon', document.getElementById('qtd4').value, '25.90', 4)"> Adicionar ao carrinho </button>
+</div>
+
+<p class="burger">
+	<aside>
+	<a href="carrinho.html"> Ver Carrinho de compras </a>
+</p>	
+		
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>

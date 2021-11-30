@@ -1,0 +1,61 @@
+#topbar {
+    padding: 1;
+    font-size: 13px;
+    height: 50px;
+    background: rgba(56, 46, 46, 0.8);
+   
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+.compras img {
+    height: 30px;
+    width: 30px;
+    line-height: 5px;
+    position: sticky;
+}
+.compras {
+    font-size: 18px;
+    position: center;
+    float: right;
+    bottom: 20;
+}
+.Burger img {
+  
+  column-count:auto;
+  display: block;
+  width: 50%;
+  border: 1px solid rgb(24, 20, 20);
+  border-radius: 4px;
+  padding: 5px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.Burger img:hover {
+    transform: scaleX(-1);
+}
+.Burger {
+  column-count: 1;
+  position: relative;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px;
+
+}
+.compras ol li {
+    display: inline;
+    text-align: center;
+    list-style-type: none;
+}
+.carrinho {
+    position: relative;
+    
+    bottom: 5px;
+}
+.compras a {
+    text-decoration: none;
+}
+.cabeloja {
+    left: 150px;
+}
